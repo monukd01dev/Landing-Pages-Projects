@@ -45,6 +45,11 @@
     --error: #E53835;
     --success: #2E7D31;
   }
+  /* font-sizes */
+  :root{
+    --font-normal: 1.3rem;
+    --font-head : 3rem;
+  }
   /* css-reset */
   *{
     margin: 0;
@@ -182,3 +187,89 @@
     border-radius: 3px;
     font-weight: medium;
 }
+
+
+/* main - our clients */
+
+main .our-clients{
+    max-width: 1500px;
+    width: 90%;
+    margin: 2.5rem auto;
+    /* outline: 2px solid green; */
+    text-align: center;
+}
+
+.our-clients h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--d-grey);
+}
+
+.our-clients p{
+    font-size: 1.3rem;
+    color: var(--grey);
+    padding: 1rem 0;
+}
+
+.our-clients .clients-img{
+    margin: 1rem 0;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px solid red; */
+}
+
+/* utility classes */
+.container{
+    max-width: 1500px;
+    width: 90%;
+    margin: 2.5rem auto;
+    outline: 1px solid red;
+}
+.section-heads{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--d-grey);
+}
+.section-desc{
+    font-size: 1.3rem;
+    color: var(--grey);
+    padding: 1rem 0;
+}
+
+.manage-community{
+    margin-top: 3rem;
+}
+
+.manage-community .details{
+   width: 750px; 
+   margin: 0 auto;
+   text-align: center;
+}
+.manage-community .card-container{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.manage-community .card-container .card{
+    padding: 2rem;
+    outline: 1px solid black;
+    width: 350px;
+    border: 5px;
+    box-shadow: 0 5px 10px var(--l-grey);
+}
+/* .manage-community .card-container .card img{
+    margin-bottom: 1.7rem;
+} */
+
+.manage-community .card-container .card h2{
+    font-size: 2.4rem;
+    color: var(--d-grey);
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+
