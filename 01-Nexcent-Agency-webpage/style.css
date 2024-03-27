@@ -225,7 +225,7 @@ main .our-clients{
     max-width: 1500px;
     width: 90%;
     margin: 2.5rem auto;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 .section-heads{
     font-size: 3rem;
@@ -256,10 +256,10 @@ main .our-clients{
 
 .manage-community .card-container .card{
     padding: 2rem;
-    outline: 1px solid black;
     width: 350px;
-    border: 5px;
-    box-shadow: 0 5px 10px var(--l-grey);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0px rgba(171, 190, 209,20%) ;
+
 }
 /* .manage-community .card-container .card img{
     margin-bottom: 1.7rem;
