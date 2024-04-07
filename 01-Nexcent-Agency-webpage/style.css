@@ -6,7 +6,7 @@
     --black: #263238;
     --d-grey: #4D4D4D; 
     --grey: #717171;
-    --l-grey: #89939E;
+    --l-grey: hsl(211, 10%, 58%);
     --grey-blue: #ABBED1;
     --silver: #F5F7FA;
     --white: #FFFFFF;
@@ -73,8 +73,15 @@
 
     /* nav-styles */
     nav{
-        outline: 1px solid var(--primary);
+        /* border-bottom: 1px solid var(--primary); */
         height: 5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 200;
+        box-shadow: 0px 5px 6px hsl(211, 10%, 88%);
     }
 
     .nav-wrapper{
@@ -83,11 +90,15 @@
         height: 100%;
         margin: 0 auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
-
+    .nav-wrapper #bars{
+        display: none;
+    }
+    #cross{
+        display: none;
+    }
     .img-con{
         width: fit-content;
     }
@@ -139,6 +150,7 @@
 
 /* heroSection */
 .hero{
+    margin-top: 5rem;
     background-color: var(--silver);
 }
 .hero-con{
@@ -149,7 +161,6 @@
     /* outline: 1px solid red; */
     padding: 6rem 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .hero-detail{
@@ -260,7 +271,7 @@ main .our-clients{
 .manage-community .card-container{
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 1rem;
 }
 
@@ -357,13 +368,14 @@ main .our-clients{
     display: flex;
     width: 100%;
     gap: 1rem;
+    /* outline: 1px solid red; */
 }
 .helping-wrapper .down{
     
     display: flex;
     width: 100%;
     gap: 1rem;
-   
+    /* outline: 1px solid red; */
 }
 
 .meter{
@@ -374,6 +386,9 @@ main .our-clients{
     justify-content: start;
     gap: 1rem;
 }
+/* .meter > *{
+    outline: 1px solid red;
+} */
 .meter img{
     width: 80px;
 }
@@ -487,7 +502,8 @@ main .our-clients{
 
 .caring .cards .img-con{
     position: relative;
-    width: 480px;
+    max-width: 480px;
+    width : 32%;
     height: 320px;
     border-radius: 15px;
     background-attachment: center;
@@ -571,6 +587,11 @@ main .our-clients{
     padding-left: 0.5rem;
 }
 
+
+
+
+
+
 footer{
     background-color: var(--black);
     color: var(--white);
@@ -591,7 +612,7 @@ footer a{
     
 }
 .footer-wrapper .left{
-    width: 30%;
+    width: 40%;
 }
 .footer-wrapper .right{
     width: 55%;
@@ -606,6 +627,7 @@ footer a{
 .footer-wrapper .copyrights p{
     line-height: 2;
 }
+
 footer .footer-wrapper .left .social-icons a{
     display: inline-block;
     transition: all linear 0.2s;
@@ -645,6 +667,7 @@ footer .footer-wrapper .left .social-icons a:hover{
         outline: none; /* Remove default outline on focus */
         -webkit-appearance: none; /* Remove browser-specific styles (optional) */
       border-radius: 6px;
+      /* width: 100%; */
 }
 .footer-wrapper .right input[type="text"]::placeholder{
     color: #D9DBE1;

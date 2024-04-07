@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.85">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
     <script src="./script.js" defer></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo.png">
     <title>Nexcent Agency</title>
@@ -16,8 +17,14 @@
                 <div class="img-con">
                     <img src="./assets/images/logo-with-name.png" alt="Nexcent-logo-with-name">
                 </div>
+                <div id="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <div class="nav-menu-con">
                     <div class="nav-menu">
+                        <div id="cross">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
                         <a class="home-btn" href="#home">home</a>
                         <a href="#feature">feature</a>
                         <a href="#community">community</a>
@@ -33,11 +40,11 @@
         <section class="hero">
             <div class="hero-con">
                 <div class="hero-detail">
-                    <h1>Lessons and insights <span>from 8 years</span></h1>
+                    <h1>Lessons and insights<br> <span>from 8 years</span></h1>
                     <p>
                         Where to grow your business as a photographer: site or social media?
                     </p>
-                    <button>Register</button>
+                    <button id="btn">Register</button>
                 </div>
                 <div class="hero-img">
                     
@@ -91,7 +98,7 @@
                     <h1 class="section-heads">The unseen of spending three years at Pixelgrade</h1>
                     <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
 
-                    <a href="#">Learn More</a>
+                    <a id="btn" href="#">Learn More</a>
                 </div>
             </div>
         </section>
@@ -148,13 +155,13 @@
                     <h1 class="section-heads">How to design your site footer like we did</h1>
                     <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
 
-                    <a href="#">Learn More</a>
+                    <a id="btn" href="#">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <section class="tesla">
-            <div class=" tesla-wrapper container">
+        <section id="tesla" class="tesla">
+            <div id="tesla-wrapper" class=" tesla-wrapper container">
                 <div class="left ">
                     <!-- <img src="./assets/images/side/3.jpg" alt=""> -->
                 </div>
@@ -209,7 +216,7 @@
         <section class="get-demo">
             <div class="container wrapper-demo">
                 <h1>Pellentesque suscipit<br>fringilla libero eu.</h1>
-                <a href="#">Get a Demo <i class="fa-solid fa-arrow-right"></i></a>
+                <a id="btn" href="#">Get a Demo <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
     </main>
@@ -233,7 +240,7 @@
                 </div>
             </div>
             <div class="right">
-                <div class="company">
+                <div id="company">
                     <h2>Company</h2>
                     <div class="right-content">
                         <a href="">About us</a>
@@ -243,7 +250,7 @@
                         <a href="">Testimonial</a>
                     </div>
                 </div>
-                <div class="support">
+                <div id="support">
                     <h2>Support</h2>
                     <div class="right-content">
                         <a href="">Help Center</a>
@@ -253,9 +260,9 @@
                         <a href="">Status</a>
                     </div>
                 </div>
-                <div class="news-letter">
+                <div id="news-letter">
                     <h2>Stay up to date</h2>
-                    <div class="right-content input-con">
+                    <div id="input-con" class="right-content input-con">
                         <input type="text" name="" id="" placeholder="Your email address">
                         <i class="fa-regular fa-paper-plane mine-class"></i>
                     </div>
