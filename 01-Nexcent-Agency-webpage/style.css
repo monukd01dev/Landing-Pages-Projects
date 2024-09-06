@@ -17,36 +17,34 @@
     /* Secondary Color (assuming there's only one) */
     --secondary: #263238;
     
-    /* Info Color */
-    --info: #2194f3;
-  }
+
   
   /* Color Shades */
-  :root {
+
     --shade-1: #43A046;
     --shade-2: #388E3B;
     --shade-3: #237D31;
     --shade-4: #1B5E1F;
     --shade-5: #103E13;
-  }
+
   
   /* Color Tints */
-  :root {
+
     --tint-1: #66BB69;
     --tint-2: #81C784;
     --tint-3: #A5D6A7;
     --tint-4: #C8E6C9;
     --tint-5: #E8F5E9;
-  }
+
   
   /* Action Colors */
-  :root {
+
     --warning: #FBC02D;
     --error: #E53835;
     --success: #2E7D31;
-  }
+
   /* font-sizes */
-  :root{
+
     --font-normal: 1.3rem;
     --font-head : 3rem;
   }
@@ -280,7 +278,12 @@ main .our-clients{
     width: 350px;
     border-radius: 10px;
     box-shadow: 0px 3px 6px 0px rgba(171, 190, 209,20%) ;
+    transition: all 0.4s ease;
 
+}
+.manage-community .card-container .card:hover{
+    transform:scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 /* .manage-community .card-container .card img{
     margin-bottom: 1.7rem;
@@ -509,7 +512,13 @@ main .our-clients{
     background-attachment: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 0.4s ease;
     
+}
+.caring .cards .img-con:hover{
+    z-index:100;
+    transform: scale(1.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .caring .cards .img-con .over{
@@ -543,9 +552,21 @@ main .our-clients{
     text-align: center;
     font-size: 1.5rem;
     text-decoration: none;
+    transition: all 0.4s ease;
 }
 .caring .cards .img-con .over a i{
-    padding-left: 1rem;
+    position:relative;
+    left:0;
+    padding-left: 0.7rem;
+    transition: all 0.4s ease;
+    
+}
+.caring .cards .img-con .over a:hover{
+    i{
+        left:0.3rem;
+        
+    }
+    
 }
 
 /* get-demo */
@@ -683,4 +704,24 @@ footer .footer-wrapper .left .social-icons a:hover{
     transform: translate(0,-50%);
     /* transform: scale(1.2); */
     font-size: 1.3rem;
+}
+
+#btn{
+    transition: all 0.5s ease;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    i{
+        position:relative;
+        margin-left: 0px;
+        left:0;
+        transition: all 0.5s ease ;
+    }
+}
+
+#btn:hover{
+    background-color : var(--shade-2);
+
+    i{
+        left: 5px;
+    }
 }
