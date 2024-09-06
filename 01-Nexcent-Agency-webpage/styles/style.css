@@ -123,7 +123,11 @@
         color: var(--d-grey);
         text-decoration: none;
         font-weight: medium;
-
+        transition:all 0.3s ease;
+    }
+    .nav-menu a:hover{
+        color:var(--black);
+        /* transform:scale(1.02); */
     }
     .nav-menu .home-btn{
         padding: 1.8rem;
@@ -169,7 +173,7 @@
 .hero-img{
     width: 35%;
     height: 100%;
-    background-image: url("./assets/images/header-img.png");
+    background-image: url("../assets/images/header-img.png");
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
@@ -232,6 +236,12 @@ main .our-clients{
     align-items: center;
     /* outline: 1px solid red; */
 }
+.our-clients .clients-img .elem{
+    transition: all 0.2s ease;
+}
+.our-clients .clients-img .elem:hover{
+    transform:scale(1.3);
+}
 
 /* utility classes */
 .container{
@@ -278,7 +288,7 @@ main .our-clients{
     width: 350px;
     border-radius: 10px;
     box-shadow: 0px 3px 6px 0px rgba(171, 190, 209,20%) ;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in-out;
 
 }
 .manage-community .card-container .card:hover{
@@ -309,7 +319,7 @@ main .our-clients{
     
 }
 .pixelgrade .left{
-    background-image: url("./assets/images/side/1.png");
+    background-image: url("../assets/images/side/1.png");
     flex-basis: 40%;
     height: 100%;
     
@@ -409,7 +419,7 @@ main .our-clients{
     margin-top: 0;
 }
 #second-ground{
-    background-image: url('./assets/images/side/2.png');
+    background-image: url('../assets/images/side/2.png');
 }
 
 
@@ -429,7 +439,7 @@ main .our-clients{
     width: 28%;
     /* height: 400px; */
     border-radius: 10px;
-    background-image: url('./assets/images/side/3.jpg');
+    background-image: url('../assets/images/side/3.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -461,15 +471,33 @@ main .our-clients{
     align-items: center;
     justify-content: space-between;
     margin-top: 2rem;
+    
 
+}
+
+.tesla-wrapper .right .clients-img .elem{
+    transition: all 0.2s ease;
+}
+.tesla-wrapper .right .clients-img .elem:hover{
+    transform:scale(1.3);
 }
 .tesla-wrapper .right .clients-img .green-client{
     color: var(--primary);
     font-size: 1.5rem;
     font-weight: 600;
+    
+    cursor:pointer;
 }
 .tesla-wrapper .right .clients-img .green-client i{
-    padding-left: 1rem;
+    position:relative;
+    padding-left: 0.4rem;
+    transition: all 0.4s ease;
+    left:0;
+}
+.tesla-wrapper .right .clients-img .green-client:hover{
+    i{
+        left:0.3rem;
+    }
 }
 
 
@@ -488,13 +516,13 @@ main .our-clients{
 }
 
 .caring .cards .one{
-    background-image: url('./assets/images/cards/1.jpg');
+    background-image: url('../assets/images/cards/1.jpg');
 }
 .caring .cards .two{
-    background-image: url('./assets/images/cards/2.jpg');
+    background-image: url('../assets/images/cards/2.jpg');
 }
 .caring .cards .three{
-    background-image: url('./assets/images/cards/3.jpg');
+    background-image: url('../assets/images/cards/3.jpg');
 }
 
 .caring .cards{
@@ -517,7 +545,7 @@ main .our-clients{
 }
 .caring .cards .img-con:hover{
     z-index:100;
-    transform: scale(1.2);
+    transform: scale(1.05);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
